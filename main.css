@@ -56,7 +56,6 @@ Block formatting
   width: 100%;
   color: #FFF;
   font-family: sans-serif;
-	margin: 0;
 }
 
 .shoutout-block {
@@ -69,20 +68,20 @@ Block formatting
 .shoutout {
   font-weight: bold;
   font-size: 30px;
-  margin: 25% 20%;
+  margin: 50px 45px;
   position: absolute;
 }
 
 .author-name {
   position: absolute;
-  margin-top: 55%;
-  margin-left: 15%;
+	bottom: 40px;
+	left: 40px;
 }
 
 .date {
   position: absolute;
-  margin-top: 55%;
-  margin-left: 70%;
+	bottom: 40px;
+	right: 40px;
 }
 
 /*****************************
@@ -111,4 +110,20 @@ Block colors
 
 .pink-block {
   background-color: #FBA3DB;
+}
+
+/************************************
+Media queries
+************************************/
+
+@media screen and (max-width: 499px) {
+	.shoutout-block {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+	.shoutout-block {
+		width: 50%;
+	}
 }
